@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Raiders Connect</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main_style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" id="logo"></a>
+    <form id="login" name="login" action="login.php" method="post">
+      <input id="log_email" class="login" type='email' name='email' placeholder='Email'>
+      <input id="log_password" class="login" type='password' name='password' placeholder='Password'>
+      <button id="log" class="login" type="submit" name='login_button'>Login</button>
+    </form>
+  </header>
+  <!--Close Header-->
+      <div id="content-wrapper">
+  <section id="content">
+
+      <section id="lc">
+        <div class="_50-wrapper">
+          <article class="h2_t">
+            <h2>Connect With the
+              Raider Family Today!
+            </h2>
+          </article>
+          <div id="slideshow">
+            <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/edlio-images-service/d116/17/09/29/170212-ea922800-e459-4dc7-b9dd-322d47947def.JPG">
+            <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/edlio-images-service/cc8b/17/09/29/170851-211e2718-dc8f-42d4-af0c-3e25d1363117.JPG">
+            <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/edlio-images-service/1c95/17/09/29/170444-82280524-b9b5-4da6-9a81-48bba2b86f11.JPG">
+            <script>
+              var PicNum = 0;
+              slide();
+
+              function slide(){
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";
+                }
+                PicNum++;
+                if (PicNum > x.length) {PicNum = 1}
+                x[PicNum-1].style.display = "block";
+                setTimeout(slide, 4500);
+                }
+            </script>
+          </div>
+          <article class="h2_b">
+            <h2>Instantly see what everyone is doing
+              <br>in the Raider Community!</h2>
+        </div>
+      </section>
+  <!--Close Left Container & Wrapper-->
+      <section id="rc">
+        <div class="_50-wrapper">
+          <article class="h2_t">
+            <h2>Sign Up - It's Easy!</h2>
+          </article>
+          <div id="sign-up-form">
+            <form name="signup-form" action="register.php" method="post">
+              <input id="name" class="signup" type="text" name="first_name" placeholder="First Name" required>
+              <input id="l_name" class="signup" type="text" name="last_name" placeholder="Last Name" required>
+              <br>
+              <input id="email" class="signup" type="email" name="email" placeholder="Email" required>
+              <br>
+              <input id="password" class="signup" type="password" name="password" placeholder="Password" required>
+              <br>
+              <input id="c_password" class="signup" type="password" name="confirm_password" placeholder="Confirm Password" required>
+              <br>
+              <button id="resgister" class="signup" type="submit" name="register">Register</button>
+            </form>
+          </div>
+          <article class="parents-alumni">
+            <h4>For Parents and Alumni</h4>
+            <p>Do you want to be
+              <br>part of the exclusive
+              <br>Raider media? <a href="">Click here</a>
+              <br>and submit a request
+              <br>for your own account
+            </p>
+          </article>
+        </div>
+      </section>
+    <!--Close Right Container & Wrapper-->
+    </div>
+  </section>
+  <!--Close content & Wrapper-->
+  <footer>
+    <div id="links">
+      <ul class="footer">
+        <li class="footer"><a href="questions.html">Any Questions?</a></li>
+        <li class="footer"><a href=http://www.portrichmondhs.org/ target=_blank>Our Website</a></li>
+      </ul>
+    </div>
+    <div id="social-badges">
+      <ul class="social">
+        <li class="footer"><a href="" target=_blank>
+          <img class="badges" alt="Instagram" src="http://pngimg.com/uploads/instagram/instagram_PNG9.png">
+        </a>
+      </li class="footer">
+        <li class="footer"><a href="" target=_blank>
+          <img class="badges" alt="Twitter" src="https://vignette1.wikia.nocookie.net/dusktilldawn/images/1/1a/Twitter_logo.png/revision/latest?cb=20140507210836">
+        </a>
+      </li>
+        <li class="footer"><a href="" target=_blank>
+          <img class="badges" alt="Blogger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Blogger.svg/2000px-Blogger.svg.png">
+        </a>
+      </li>
+        <li class="footer"><a href="" target=_blank>
+          <img class="badges" alt="Facebook" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png">
+        </a>
+      </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
